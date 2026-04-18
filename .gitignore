@@ -44,3 +44,4 @@ next-env.d.ts
 _reference/
 .env.local
 design-skills/
+.vercel
