@@ -13,7 +13,7 @@ The demo wow is **visible agentic behavior**: split-screen UI where the left sho
 - Backend: Next.js API route at /api/audit that streams SSE to the frontend
 - Agent: Claude Sonnet 4.6 via @anthropic-ai/sdk with native tool use
 - Research: You.com Research API (endpoint: https://api.you.com/v1/research)
-- Sandbox: Veris AI for live blueprint instantiation (API key provided at hackathon)
+- Sandbox: Veris AI testing via CLI. Blueprint generates veris.yaml + scenarios YAML for each recommended agent, so the enterprise buyer can instantly test proposed agents via `veris run` before committing.
 
 ## File structure (target)
 

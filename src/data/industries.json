@@ -1,0 +1,101 @@
+{
+  "fintech": {
+    "avg_maturity": 6.1,
+    "top_use_cases": [
+      "AP/AR invoice reconciliation agents",
+      "fraud detection and transaction anomaly scoring",
+      "KYC/AML document review automation",
+      "credit underwriting copilots"
+    ],
+    "common_tech_stack": ["Stripe", "Plaid", "Segment", "Snowflake", "HubSpot"],
+    "competitive_ai_pressure": 8
+  },
+  "saas": {
+    "avg_maturity": 6.8,
+    "top_use_cases": [
+      "customer health scoring and churn prediction agents",
+      "support ticket deflection and routing agents",
+      "sales ops enrichment and pipeline hygiene agents",
+      "contract renewal risk scoring agents"
+    ],
+    "common_tech_stack": ["HubSpot", "Salesforce", "Segment", "Intercom", "Amplitude"],
+    "competitive_ai_pressure": 9
+  },
+  "ecommerce": {
+    "avg_maturity": 5.4,
+    "top_use_cases": [
+      "product catalog enrichment and SEO agents",
+      "returns triage and fraud detection agents",
+      "inventory forecasting and replenishment agents",
+      "customer service auto-resolution agents"
+    ],
+    "common_tech_stack": ["Shopify", "Klaviyo", "Google Ads", "Meta Ads", "Zendesk"],
+    "competitive_ai_pressure": 7
+  },
+  "healthcare": {
+    "avg_maturity": 4.2,
+    "top_use_cases": [
+      "prior authorization automation agents",
+      "clinical documentation and coding agents",
+      "patient intake and scheduling agents",
+      "medical billing denial management agents"
+    ],
+    "common_tech_stack": ["Epic", "Cerner", "Salesforce Health Cloud", "Twilio"],
+    "competitive_ai_pressure": 6
+  },
+  "logistics": {
+    "avg_maturity": 4.9,
+    "top_use_cases": [
+      "freight exception handling agents",
+      "route optimization and ETA agents",
+      "customs and documentation automation agents",
+      "carrier procurement and bid evaluation agents"
+    ],
+    "common_tech_stack": ["SAP", "Oracle", "Project44", "FourKites"],
+    "competitive_ai_pressure": 6
+  },
+  "legal": {
+    "avg_maturity": 3.8,
+    "top_use_cases": [
+      "contract review and clause extraction agents",
+      "e-discovery and document privilege review agents",
+      "due diligence and deal memo generation agents",
+      "compliance and regulatory monitoring agents"
+    ],
+    "common_tech_stack": ["iManage", "Relativity", "Clio", "Westlaw"],
+    "competitive_ai_pressure": 8
+  },
+  "media": {
+    "avg_maturity": 5.6,
+    "top_use_cases": [
+      "content tagging and metadata enrichment agents",
+      "rights management and licensing agents",
+      "personalization and recommendation agents",
+      "ad inventory optimization agents"
+    ],
+    "common_tech_stack": ["Contentful", "Sanity", "Google Ad Manager", "Segment"],
+    "competitive_ai_pressure": 7
+  },
+  "manufacturing": {
+    "avg_maturity": 4.1,
+    "top_use_cases": [
+      "quality control visual inspection agents",
+      "supply chain risk and disruption monitoring agents",
+      "predictive maintenance agents",
+      "procurement and vendor negotiation agents"
+    ],
+    "common_tech_stack": ["SAP", "Oracle", "Rockwell", "Siemens MES"],
+    "competitive_ai_pressure": 5
+  },
+  "other": {
+    "avg_maturity": 5.0,
+    "top_use_cases": [
+      "knowledge management and internal search agents",
+      "meeting intelligence and action item agents",
+      "procurement and vendor evaluation agents",
+      "document review and summarization agents"
+    ],
+    "common_tech_stack": ["Notion", "Slack", "Google Workspace", "HubSpot"],
+    "competitive_ai_pressure": 6
+  }
+}

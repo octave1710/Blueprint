@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --src-dir --import-alias \"@/*\" --no-eslint --use-npm --yes)",
+      "Bash(npx create-next-app@latest blueprint-app --typescript --tailwind --app --src-dir --import-alias \"@/*\" --no-eslint --use-npm --yes)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" --max-time 5 http://localhost:3000/)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git check-ignore *)",
+      "Bash(npm install *)",
+      "Bash(npx --yes shadcn@latest init --base-color slate --yes)",
+      "Bash(npx --yes shadcn@latest init --help)",
+      "Bash(npx --yes shadcn@latest init --force --yes)",
+      "Bash(npx --yes shadcn@latest init --force --no-reinstall)",
+      "Bash(npx --yes shadcn@latest init --defaults --force --no-reinstall)",
+      "Bash(yes)"
+    ]
+  }
+}
