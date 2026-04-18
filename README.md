@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Blueprint — Autonomous Enterprise AI Audit Agent
 
-## Getting Started
+**Enterprise Agent Jam NYC — April 18, 2026**
 
-First, run the development server:
+Blueprint audits any enterprise from a single URL and generates 3 deployable AI agent blueprints with evidence-grounded ROI estimates. Each blueprint comes with ready-to-deploy Veris sandbox configurations — so enterprise buyers can test proposed agents before committing engineering resources.
+
+## Live demo
+
+**Live app**: https://blueprint-alpha-five.vercel.app
+
+**Loom walkthrough**: TON_URL_LOOM_ICI
+
+## What it does
+
+1. User pastes a company URL
+2. Claude Sonnet 4 agent autonomously researches the company using 5 tools: fetch_url, search_web (You.com), detect_tech_stack, get_industry_benchmark, generate_veris_config
+3. Agent produces a structured report: AI maturity score, 3 enterprise-grade AI agent recommendations with problems, solutions, stacks, ROI estimates, and evidence citations
+4. For each blueprint, Blueprint generates a complete veris.yaml + test scenarios, ready to run with `veris run`
+
+## Architecture
+
+- **Frontend**: Next.js 14 App Router + Tailwind + shadcn/ui
+- **Agent**: Claude Sonnet 4 via @anthropic-ai/sdk with native tool use
+- **Research**: You.com Search API
+- **Sandbox integration**: Veris AI — Blueprint generates Veris configs as a 5th agent tool
+
+## Sponsor integrations
+
+- **Anthropic** — Claude Sonnet 4 powers the agent orchestration with multi-step tool use
+- **You.com** — real-time enterprise research via Search API
+- **Veris AI** — every recommended blueprint ships with a complete veris.yaml + scenarios for immediate sandbox testing
+
+## Run locally
 
 ```bash
+git clone https://github.com/octave1710/Blueprint.git
+cd Blueprint
+npm install
+cp .env.example .env.local  # then fill in ANTHROPIC_API_KEY, YOU_API_KEY
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Built by
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Octave Alliot-Herbin — building AI agents at the intersection of enterprise ops and applied LLMs.
