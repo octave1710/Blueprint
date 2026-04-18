@@ -8,7 +8,7 @@ Blueprint audits any enterprise from a single URL and generates 3 deployable AI 
 
 **Live app**: https://blueprint-alpha-five.vercel.app
 
-**Loom walkthrough**: TON_URL_LOOM_ICI
+**Loom walkthrough**: https://www.loom.com/share/2b103507d63f4f7e858b577dfeaca8ef
 
 ## What it does
 
